@@ -11,12 +11,19 @@
 
              function checkRock()
              {
-                 $output = array();
-                 $rock = "rock";
 
-                 if ($rock == $rock) {
+                 $input1 = "rock";
+                 $input2 = "rock";
+                 $output = array($input1, $input2);
+
+                 
+
+
+
+
+
                      return $output;
-                 }
+
 
              }
 
