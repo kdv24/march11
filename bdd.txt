@@ -36,3 +36,6 @@ Output: (scissors) wins
 
 Input: Player1 chooses scissors and Player2 chooses rock
 Output: Player 2 (Rocks) wins
+
+
+our website should have 3 buttons for each player.
