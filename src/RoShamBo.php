@@ -12,21 +12,21 @@
              function checkWin()
              {
 
-                 $input1 = "rock";
-                 $input2 = "paper";
+                  $input1 = "rock";
+                  $input2 = "rock";
 
-                 $output = array('player1'=>$input1, 'player2'=>$input2);
-                 $win = array();
+                 $output = "";
 
-                if($output['player1']=="rock"){
-                    if($output['player2']=="paper"){
-                        return $output;
+
+                if($input1 == "rock"){
+                    if($input2 =="paper"){
+                        $output = "player2";
                     }
-                    elseif($output['player2'=="scissors"]){
+                    elseif($input2 == "scissors"){
                         $output = "player1";
                     }
                     else {
-                        return $win;
+                        $output = "tie";
                     }
                 }
 
