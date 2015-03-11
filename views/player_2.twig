@@ -4,19 +4,22 @@
         <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
     </head>
     <body>
+
         {% set Rock = "Rock"%}
         {% set Paper = "Paper"%}
         {% set Scissors = "Scissors"%}
+
         <div class="container">
             <div class="jumbotron">
                 <h1>Rock, Paper, Scissors</h1>
             </div>
             <div class="col-md-6">
 
-<form action="/player_2"  method="post">
-  <button name="player_1" type="submit" value="rock" class="btn-success">{{ Rock }}</button>
-  <button name="player_1" type="submit" value="paper"class="btn-primary">{{ Paper }}</button>
-  <button name="player_1" type="submit" value="scissors" class="btn-warning">{{ Scissors }}</button>
+<form action="/who_wins"  method="post">
+  <button name="player_2" type="submit" value="rock" class="btn-success">{{ Rock }}</button>
+  <button name="player_2" type="submit" value="paper"class="btn-primary">{{Paper}}</button>
+  <button name="player_2" type="submit" value="scissors" class="btn-warning">{{Scissors}}</button>
+  <input name="player_1" type="hidden">
   </form>
 
                 <!-- <h1>Player 1</h1>
