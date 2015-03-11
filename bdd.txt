@@ -1,0 +1,38 @@
+This Rock, Paper, Scissors game will play by player one and two choosing Rock, Paper, or Scissors at the same time.  Rocks beats scissors, scissors beats paper, paper beats rock.
+
+
+
+Input: Player1 chooses rock and Player2 chooses rock
+Output: Tie
+
+
+Input: Player1 chooses scissors and Player2 chooses scissors
+Output: Tie
+
+
+Input: Player1 chooses paper and Player2 chooses paper
+Output: Tie
+
+
+Input: Player1 chooses rock and Player2 chooses scissors
+Output: Player1 wins
+
+
+Input: Player1 chooses rock and Player2 chooses paper
+Output: Player2(paper) wins
+
+
+Input: Player1 chooses paper and Player2 chooses scissors
+Output: Player2(Scissors) wins
+
+
+Input: Player1 chooses paper and Player2 chooses rock
+Output: player1 (Paper) wins
+
+
+Input: Player1 chooses scissors and Player2 chooses paper
+Output: (scissors) wins
+
+
+Input: Player1 chooses scissors and Player2 chooses rock
+Output: Player 2 (Rocks) wins
