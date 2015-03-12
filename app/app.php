@@ -6,7 +6,7 @@
             $app = new Silex\Application();
             $app['debug']=true;
 
-            $app->register(new Silex\Provider\TwigServiceProvider(), array(
+            $app->register(new Silex\Provider\TwigServiceProvider(),array(
                 'twig.path' => __DIR__.'/../views'));
 
 
@@ -20,9 +20,10 @@
             });
 
             $app->post("/who_wins", function() use ($app) {
+            $player1 = $_POST["player1"]; 
             $player2 = $_POST['player_2_button'];
             $results = new RockPaperScissor;
-            $winner = $results->checkWin($_POST['player_1'], $_POST['player_2']);
+            $winner = $results->checkWin($player1, $player2); // 
             return $app['twig']->render('who_wins.twig', array('decision' => $winner));
             });
 
